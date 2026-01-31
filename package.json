@@ -1,17 +1,23 @@
 {
-  "name": "david-js",
+  "name": "pinterest-image-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "img.js",
+  "description": "Small API to search images on Pinterest (scraping minimal) - deployable on Render",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "dev": "NODE_ENV=development nodemon src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "node-fetch": "^3.3.2"
-  }
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "license": "MIT"
 }
